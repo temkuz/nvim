@@ -1,9 +1,6 @@
 [submodule "pack/ellisonleao/start/gruvbox.nvim"]
 	path = pack/ellisonleao/start/gruvbox.nvim
 	url = git@github.com:ellisonleao/gruvbox.nvim.git
-[submodule "pack/hrsh7th/start/cmp-buffer"]
-	path = pack/hrsh7th/start/cmp-buffer
-	url = git@github.com/hrsh7th/cmp-buffer.git
 [submodule "pack/hrsh7th/start/cmp-cmdline"]
 	path = pack/hrsh7th/start/cmp-cmdline
 	url = git@github.com:hrsh7th/cmp-cmdline.git

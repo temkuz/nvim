@@ -1,5 +1,5 @@
 require('base_config')
-require('autocomplete')
+require('rust')
 
 require('keymap')
 

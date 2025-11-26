@@ -1,4 +1,5 @@
 require('base_config')
+require('python')
 require('rust')
 
 require('keymap')
@@ -6,3 +7,4 @@ require('keymap')
 -- theme
 require('gruvbox')
 vim.cmd('colorscheme gruvbox')
+

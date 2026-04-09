@@ -7,5 +7,8 @@ vim.pack.add({
   'https://github.com/hrsh7th/cmp-path',
   'https://github.com/hrsh7th/cmp-cmdline',
   'https://github.com/hrsh7th/cmp-nvim-lua',
+  'https://github.com/olimorris/codecompanion.nvim',
+  'https://github.com/nvim-lua/plenary.nvim',
+  'https://github.com/nvim-treesitter/nvim-treesitter'
 })
 

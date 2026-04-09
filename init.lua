@@ -10,6 +10,9 @@ require('python')
 require('rust')
 require('keymap')
 
+-- codecompanion
+require('lmstudio')
+
 -- theme
 require('gruvbox')
 vim.cmd('colorscheme gruvbox')

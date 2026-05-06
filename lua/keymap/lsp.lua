@@ -1,0 +1,5 @@
+vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, { desc = 'rename' })
+vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, { })
+vim.keymap.set('n', '<leader>K', vim.lsp.buf.hover, { })
+vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { })
+vim.keymap.set('n', '<leader>f', vim.lsp.buf.format, {})

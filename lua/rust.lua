@@ -1,6 +1,8 @@
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 local rust_analyzer_config = {
+    cmd = { 'rust-analyzer' },
+    root_markers = { 'Cargo.toml' },
     capabilities = capabilities,
     on_attach = function(client, bufnr)
         if vim.lsp.inlay_hint then
@@ -27,11 +29,11 @@ local cmp = require('cmp')
 
 cmp.setup({
     completion = {
-        autocomplete = {
-            cmp.TriggerEvent.TextChanged,
-            cmp.TriggerEvent.InsertEnter,
-        },
-        keyword_length = 1,
+        -- autocomplete = {
+        --     cmp.TriggerEvent.TextChanged,
+        --     cmp.TriggerEvent.InsertEnter,
+        -- },
+        keyword_length = 2,
     },
     snippet = {
         expand = function(args)
@@ -41,7 +43,7 @@ cmp.setup({
     sources={
         {name='nvim_lsp', keyword_length = 1},
         {name='buffer', keyword_length = 1},
-        {name='cmdline', keyword_length = 1},
+        -- {name='cmdline', keyword_length = 1},
         {name='nvim_lua', keyword_length = 1},
         {name='path', keyword_length = 1}
     },
@@ -70,3 +72,10 @@ cmp.setup({
     },
 })
 
+cmp.setup.cmdline(':', {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = {
+        { name = 'path' },
+        { name = 'cmdline' }
+    }
+})

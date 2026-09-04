@@ -28,3 +28,4 @@ vim.g.mapleader = ' '
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.fileformats = {'unix', 'dos'}
+
